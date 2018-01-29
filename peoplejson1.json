@@ -1,0 +1,49 @@
+﻿{
+    "people": [
+        {
+            "firstname": "bushra",
+            "lastname": "bushra",
+            "age": 35,
+            "address": {
+                "street": "mill",
+                "state": "nj"
+            }
+        },
+        {
+            "firstname": "zafar",
+            "lastname": "bushra",
+            "age": 40,
+            "address": {
+                "street": "mill",
+                "state": "nj"
+            }
+        },
+        {
+            "firstname": "zafar",
+            "lastname": "bushra",
+            "age": 40,
+            "address": {
+                "street": "mill",
+                "state": "nj"
+            }
+        },
+        {
+            "firstname": "sara",
+            "lastname": "bushra",
+            "age": 40,
+            "address": {
+                "street": "mill",
+                "state": "nj"
+            }
+        },
+        {
+            "firstname": "ali",
+            "lastname": "zafar",
+            "age": 40,
+            "address": {
+                "street": "mill",
+                "state": "nj"
+            }
+        }
+    ]
+}

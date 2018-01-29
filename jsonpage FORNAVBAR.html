@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+    <!-- Optional theme -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="indexjquery.js"></script>-->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!--<link href="indexcss.css" rel="stylesheet" />-->
+    <link href="navigation-barcss.css" rel="stylesheet" />
+    <link href="about-css.css" rel="stylesheet" />
+    <link href="teamcss.css" rel="stylesheet" />
+    <link href="aboutus.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div id="nav-placeholder">
+
+
+
+    </div>
+
+    <div style="height:100px;">
+
+    </div>
+    <div class="container">
+        <h1>
+            Fetch data from JSON object
+        </h1>
+        <div id="people222">
+
+        </div>
+        <button class="btn btn-outline-primary" id="btn">
+        see more
+        </button>
+    </div>
+    <script src="Scripts/jquery-3.2.1.js"></script>
+    <script src="Scripts/umd/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.scrollTo.js"></script>
+    <script src="indexjquery.js"></script>
+    <script src="custom-team-js.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.get("navigation-bar.html", function (data) {
+                $("#nav-placeholder").replaceWith(data);
+            });
+            $.get("footer.html", function (data) {
+                $("#footer-place-holder").replaceWith(data);
+            });
+            $.get("social-media.html", function (data) {
+                $("#social-media-place-holder").replaceWith(data);
+            });
+                        
+            var output = '';
+            var btn = $('#btn');
+            btn.bind('click', loaddata);
+            function loaddata() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "about.html", true);
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                       // console.log(" before parse"+xhttp.responseText);
+                       // var response = JSON.parse(xhttp.responseText);
+                        console.log(this.responseText);
+                        output += this.responseText;
+                        console.log(output);
+                    }
+                };
+                $('#people222').html(output);
+                xhttp.send();
+            };
+            
+
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

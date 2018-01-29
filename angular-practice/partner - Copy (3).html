@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+
+    <script src="../Scripts/angular.js"></script>
+    <script src="angular-script - Copy (3).js"></script>
+    <script src="filter-angular.js"></script>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+      
+        /*//arrow-up down form tutorial 10*/
+        .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid black;
+            display:inline-block;
+        }
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid black;
+            display: inline-block;
+        }
+        th{
+            cursor:pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    
+    <!--  tutorial 12-b single search text box for firstname lastname -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div ng-controller="myController">
+                    <h3> tutorial 12</h3>
+                    search:<input type="text" placeholder="search first name or lastname" ng-model="searchtext" />
+                    <br />
+                    <br />
+                    <table class="table-striped table-bordered table">
+                        <thead>
+                            <tr>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>Date Of Birth</th>
+                                <th>GENDER</th>
+                                <th>SALARY(number)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="e in employees | filter:search">
+                                <td>{{e.firstname |uppercase}}</td>
+                                <td>{{e.lastname|uppercase}}</td>
+                                <td>{{e.dob|date:"dd/MM/yyyy"}}</td>
+                                <td>{{e.gender|lowercase}}</td>
+                                <td>{{e.salary|number:2}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

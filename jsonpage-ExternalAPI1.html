@@ -1,0 +1,84 @@
+﻿    
+    <div style="height:100px;">
+
+    </div>
+    <div class="container">
+        <h1 class="showclass"> Click to Load Data from External API</h1>
+        <h1 class="hideclass" style="display:none;"> Data  Fetched from External API</h1>
+        
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8 align-content-lg-between">
+
+                <div id="users"></div>
+
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+
+
+        <button class="btn btn-outline-primary" id="btn">see more </button>
+    </div>
+    <script src="Scripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var btn = $('#btn');
+            btn.bind('click', loadUser)
+            var ii = 1;
+
+            function loadUser() {
+
+                $('.hideclass').show();
+                $('.showclass').hide();
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "https://api.github.com/users", true);
+                xhttp.onload = function () {
+                    if (this.status == 200) {
+                        var users = JSON.parse(this.responseText);
+                        console.log(users);
+                        var output = "";
+                        for (var i in users) {
+                            output +=
+
+            '<div class="enternalapi-user">' +
+            '<img src= ' + users[i].avatar_url + '>' +
+            '<ul>' +
+            '<li> id:  ' + users[i].id +   '</li>'  +
+            '<li> login:'+ users[i].login + '</li>' +
+            '<ul>' +
+            '<a  href=' + users[i].url + '>' + '  more info </a>' +
+                            '</div>' 
+                console.log(users.length);
+                ii++;
+                console.log("ii" + ii);
+
+                if (ii > users.length) {
+                    btn.hide();
+                }
+                        }
+               document.getElementById('users').innerHTML = output;
+                    }
+                    
+                }
+                xhttp.send();
+                
+
+            }
+
+       
+        });
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

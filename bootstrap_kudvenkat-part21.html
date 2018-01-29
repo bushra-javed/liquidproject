@@ -1,0 +1,1492 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="bootstap_components.css">
+
+    <style type="text/css">
+        .mypanel .panel-warning > .panel-heading {
+            background-color: red !important;
+            color: blue !important;
+            background-image: none;
+        }
+
+        .mypanel .panel-default > .panel-heading {
+            color: red;
+            background-color: green;
+            background-image: none;
+        }
+
+        .mypanel .panel-body {
+            color: green;
+            background-color: aqua;
+        }
+
+        .mypanel #panelbodyone > .panel-body {
+            color: mediumvioletred;
+        }
+
+        /* for tabs*/
+        .mypanel .tab-content > .tab-pane {
+            background-color: green;
+            height: 360px;
+            width: 720px;
+        }
+
+        .my-tab.nav.nav-tabs {
+            background-color: #ffd800;
+            border: 1px solid red;
+        }
+
+        .tab-pane h3 {
+            margin: 0;
+        }
+
+        hr {
+            border: red 1px solid;
+        }
+
+        body {
+            padding-top: 50px;
+            padding-left: 20px;
+            /* this is  done for 47 body scroll*/
+            position: relative;
+        }
+
+        .mybread.breadcrumb > li + li:before {
+            content: "|";
+            color: green;
+            font-size: large;
+        }
+
+        .mybread.breadcrumb {
+            background-color: red;
+        }
+
+            .mybread.breadcrumb a {
+                color: black;
+                font-size: 20px;
+            }
+
+        .well {
+            background-color: #ffd800 !important;
+            color: green;
+            background-image: none;
+            border-radius: 8px;
+            /*linear-gradient(to bottom,#e8e8e8 0,#f5f5f5 100%);*/
+        }
+
+        .jumbotron {
+            background-color: aquamarine;
+        }
+
+        .divstyle {
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#mainnavbar" data-offset="20">
+    <!-- ========================================================== -->
+    <!--  set postion relative use doctype  -->
+    <h3> 47 48 bootstrap scrollspy</h3>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" id="mainnavbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button data-target=".navbar-collapse" class="navbar-toggle" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#image1">image1</a></li>
+                        <li><a href="#image2">image2</a></li>
+                        <li><a href="#image3">image3</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+                                animal        <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#animal">animal1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="divstyle" id="image1">
+            <h1> image1</h1>
+            <img src="images/image1.jpg" alt="image1" class="img-responsive" />
+        </div>
+        <div class="divstyle" id="image2">
+            <h1> image2</h1>
+            <img src="images/image2.jpg" alt="image1" class="img-responsive" />
+        </div>
+        <div class="divstyle" id="image3">
+            <h1> image3</h1>
+            <img src="images/image3.jpg" alt="image1" class="img-responsive" />
+        </div>
+        <div class="divstyle" id="animal">
+            <h1> animal</h1>
+            <img src="images/image4.jpg" alt="image1" class="img-responsive" />
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <!-- ============================================================================================================
+    <!--  set postion relative use doctype  -->
+
+
+    <br />
+    <br />
+    <hr />
+    <!-- ============================================================================================================ -->
+
+    <h2> 27 nav components </h2>
+
+    <div class="container">
+        <h2>   nav-tab </h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#"> <span class="glyphicon glyphicon-home"></span>home  </a></li>
+                    <li><a href="#"> <span class="glyphicon glyphicon-earphone"></span>       address</a></li>
+                    <li><a href="#">   <span class="glyphicon glyphicon-info-sign"></span>     contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <h2>   nav-tab  nav-tab-justiied content</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#d1"> <span class="glyphicon glyphicon-home"></span>home  </a></li>
+                    <li><a href="#d2"> <span class="glyphicon glyphicon-earphone"></span>       address</a></li>
+                    <li><a href="#d3">   <span class="glyphicon glyphicon-info-sign"></span>     contact</a></li>
+                </ul>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+
+       
+        <hr />
+
+        <hr />
+        <hr>
+        
+        
+        <h2> tab-pills</h2>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-info-sign"></span>     home</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>address</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>contact</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+        <hr />
+        <h2> tab-pills nav-stacked</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>     home</a></li>
+                    <li><a href="#">address<span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="#">contact<span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <h2> tab-pills nav-justified</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>     home</a></li>
+                    <li><a href="#">address</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+        <hr />
+        <h2>   nav-tab with dropdown </h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#"> <span class="glyphicon glyphicon-home"></span>home  </a></li>
+                    <li><a href="#"> <span class="glyphicon glyphicon-earphone"></span>       address</a></li>
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            about
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a>mission</a></li>
+                            <li><a>Vission</a></li>
+                            <li><a>products</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <h2>   nav-pills with dropdown </h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="active"><a href="#"> <span class="glyphicon glyphicon-home"></span>home  </a></li>
+                    <li><a href="#"> <span class="glyphicon glyphicon-earphone"></span>       address</a></li>
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            about
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a>mission</a></li>
+                            <li><a>Vission</a></li>
+                            <li><a>products</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <!-- ============================================================================================================ -->
+
+    <h3> 28 navbar components </h3>
+
+    <nav class="navbar navbar-default">
+        <!-- navbar-inverse navbar-fixed-bottom  can be used here and set padding-top=50px -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse">
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                    <span class="icon-bar"> </span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home">home</span></a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">address</a></li>
+                    <li><a href="#">feedback</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" placeholder="enter to search" class="form-control" />
+                        <button type="submit" class="btn btn-primary">submit</button>
+                    </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">portfolio</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ============================================================================================================ -->
+    <div class="container">
+        <h3> breadcrumb </h3>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">address </a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+
+                </ol>
+            </div>
+        </div>
+        <hr />
+        <h3> customized breadcrums</h3>
+        <div class="row">
+            <div class="col-xs-6">
+                <ol class="mybread breadcrumb">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">address </a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+
+                </ol>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+    <h1> 30 pager and pagination </h1>
+    <h3> </h3>
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <ul class="pager">
+                    <li class="previous"><a href="#">&larr;pre</a></li>
+                    <li class="next"><a href="#">next&rarr;</a></li>
+                </ul>
+                <ul class="pagination pagination-lg ">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#"> 1</a></li>
+                    <li class="disabled"><a href="#"> 2</a></li>
+                    <li><a href="#"> 3</a></li>
+                    <li><a href="#"> 4</a></li>
+                    <li><a href="#">&raquo;  </a></li>
+
+                </ul>
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#"> 1</a></li>
+                    <li><a href="#"> 2</a></li>
+                    <li><a href="#"> 3</a></li>
+                    <li><a href="#"> 4</a></li>
+                    <li><a href="#">&raquo;  </a></li>
+
+                </ul>
+                <ul class="pagination pagination-sm">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#"> 1</a></li>
+                    <li><a href="#"> 2</a></li>
+                    <li><a href="#"> 3</a></li>
+                    <li><a href="#"> 4</a></li>
+                    <li><a href="#">&raquo;  </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+
+    <!-- ============================================================================================================ -->
+    <h3> 31 bstrap  panel </h3>
+    <h3> </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> this panel-heading tn panel-title</h3>
+                    </div>
+                    <div class="panel-body">
+                        this is panel-body and this includes a table as well
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <td> name</td>
+                                <td> roll no</td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    bushra
+                                </td>
+                                <td>
+                                    20
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        this is panel-footer
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+    <h3>32 well component </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="well well-lg">
+                    this is well  controll radius and space between border <strong>well-lg</strong>
+                </div>
+                <div class="well">
+                    this isd efault well
+                </div>
+                <div class="well well-sm">
+                    this is well <strong>well-sm</strong>
+                </div>
+                <div class="well">
+                    <h3> login form</h3>
+                    <hr />
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="name"> Nmae</label>
+                            <div class="col-sm-10">
+                                <input class="form-control " id="name" placeholder="name" />
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- ============================================================================================================ -->
+
+    <h3> 33 bootstap labels and badges</h3>
+    <div class="container body-text">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="well">
+                    <h3>dot courses from pragimtech                    </h3>
+                    <h4> C# <span class="control-label label-default">begginers</span></h4>
+                    <h4>asp.net <span class="control-label label-info">advance</span></h4>
+                    <h4> ADO.net <span class="control-label label-danger">intermediate</span></h4>
+                    <h4> C++ <span class="control-label label-success">advance</span></h4>
+                    <h4> html <span class="control-label label-warning">new</span></h4>
+                </div>
+
+            </div>
+            <hr>
+            <div class="col-xs-12">
+                <h4> this span class=badge badge can be used in the a tag</h4>
+                <a href="#"> inbox <span class="badge">10</span></a><br />
+                <a href="#"> sent <span class="badge">11</span></a><br />
+                <a href="#"> junk <span class="badge">12</span></a><br />
+                <a href="#"> spam<span class="badge">17</span></a><br />
+                <a href="#"> outbox <span class="badge">10</span></a><br />
+
+            </div>
+            <hr />
+            <div class="col-xs-3">
+                <table class="table table-bordered ">
+                    <tr>
+                        <td><a href="#"> inbox </a></td>
+                        <td><span class="badge">10</span></td>
+                    </tr>
+                </table>
+
+            </div>
+            <hr>
+            <div class="col-xs-12">
+                <h4> this span class=badge badge can be used in the button</h4>
+                <button class="btn btn-primary"> inbox <span class="badge">10</span></button>
+                <button class="btn btn-primary"> sent <span class="badge">11</span></button>
+                <button class="btn btn-warning"> junk <span class="badge">12</span></button>
+                <button class="btn btn-info"> spam   <span class="badge">17</span></button>
+                <button class="btn btn-primary"> outbox <span class="badge">10</span></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+
+    <h3> progressbar bootstrap</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:60%;min-width:20%">
+                        60%
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" style="width:60%; min-width:20%;">
+                        60%
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped" style="width:60%; min-width:20%">
+                        60%
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" style="width:1%;min-width:20%">
+                        1%
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-5">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:25%;min-width:20px;">
+                        login
+                    </div>
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" style="width:25%; min-width:20px;">
+                        shipping
+                    </div>
+                    <div class="progress-bar progress-bar-info progress-bar-striped" style="width:25%; min-width:20px;">
+                        payment
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+
+    <h3> 35 jumbotron</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron">
+                    <h1> heading </h1>
+                    <p> paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraphparagraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
+                    <button class="btn btn-primary"> get start</button>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- ============================================================================================================ -->
+
+    <h3>  36 media objects</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-7">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img src=" " />
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- ============================================================================================================ -->
+
+    <h3> 37 collapse plugin </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="btn btn-primary" href="#imagegallary" data-toggle="collapse">
+                            toggle image gallary
+                        </a>
+                        <!--<button class="btn btn-primary" data-target="#imagegallary" data-toggle="collapse">
+                            toggle image gallary
+                        </button>-->
+                    </div>
+
+                    <div class="panel-body collapse in" id="imagegallary">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1> calling collapse by javascript</h1>
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <button class="btn btn-primary" id="togglebutton">
+                            toggle gallary
+                        </button>
+                        <button class="btn btn-primary" id="hidebutton">
+                            hide gallary
+                        </button>
+                        <button class="btn btn-primary" id="showbutton">
+                            show gallary
+                        </button>
+                    </div>
+
+                    <div class="panel-body collapse in" id="javagallary">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="images/img2.jpg" class="thumbnail">
+                                image1
+                                <img src="images/img2.jpg" class="img-responsive" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <!-- ============================================================================================================ -->
+    <h1>  38 n 39 accordion by         kudvenkat youtube</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="well">
+                    <button class="btn btn-primary" id="btnexpand">Expand All</button>
+                    <button class="btn btn-success" id="btncollapse">collapse All</button>
+                </div>
+
+                <div id="accordion" class="panel-group">
+                    <div class="mypanel panel panel-warning">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#panelbodyone" data-toggle="collapse" data-parent="#accordion">
+                                    <span class="glyphicon glyphicon-menu-up"></span>
+                                    one
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="panelbodyone" class="panel-collapse collapse in">
+                            <div class="mypanel panel-body">
+                                <ul>
+                                    <li><img src="img2.jpg" class="img-responsive" /></li>
+                                    <li>china</li>
+                                    <li>japan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mypanel panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#panelbodytwo" data-toggle="collapse" data-parent="#accordion">
+                                    <span class="glyphicon glyphicon-menu-down"></span>
+                                    two
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="panelbodytwo" class="panel-collapse collapse">
+                            <div class="mypanel panel-body">
+                                <ul>
+                                    <li>india</li>
+                                    <li>china</li>
+                                    <li>japan</li>
+                                </ul>
+                                <!--<div class="show">
+
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#panelbodythree" data-toggle="collapse" data-parent="#accordion">
+                                    <span class="glyphicon glyphicon-menu-down"></span>
+                                    three
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="panelbodythree" class="panel-collapse collapse">
+                            <div class=" mypanel panel-body">
+                                <ul>
+                                    <li>india</li>
+                                    <li>china</li>
+                                    <li>japan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================================ -->
+    <h1> 40 modal by bootstrap plugin </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary pull-right" data-target="#loginmodel" data-toggle="modal">login</button>
+                <div class="modal fade" id="loginmodel" tabindex="-1" data-keyboard="false" data-backdrop="false">
+                    <!--data-backdrop="static"> itss set backdround dark or white and cant go out of modal without close-->
+                    <div class="modal-dialog modal-sm">
+                        <!--used to set width ng- length-->
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title"> Login</h3>
+                            </div>
+
+                            <div class="modal-body">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label for="uname" class="control-label">username</label>
+                                        <input type="text" id="uname" class="form-control" paceholder="username" />
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <div class="form-group">
+                                        <label class="control-label" for="password">password</label>
+                                        <input class="form-control" id="password" type="password" paceholder="password" />
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-primary">login</button>
+                                <button class="btn btn-primary" data-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================================ -->
+    <!-- ============================================================================================================ -->
+
+    <br />
+    <br />
+    <br />
+    <h1>  40 modal by javascript events </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary pull-right" id="btnshowmodal">login by javascript</button>
+
+                <div class="modal fade" id="loginmodal" tabindex="-1" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title"> Login</h3>
+                            </div>
+
+                            <div class="modal-body">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label for="uname" class="control-label">username</label>
+                                        <input type="text" id="uname" class="form-control" paceholder="username" />
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <div class="form-group">
+                                        <label class="control-label" for="password">password</label>
+                                        <input class="form-control" id="password" type="password" paceholder="password" />
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-primary">login</button>
+                                <button class="btn btn-primary" id="btnmodalclose">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================================ -->
+    <br />
+    <br />
+    <br />
+    <h3>  42 tabs</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <ul class="my-tab nav nav-tabs nav-justified">
+                    <li class="active">
+                        <a href="#hometab" data-toggle="tab">Home</a>
+                    </li>
+                    <li>
+                        <a href="#contacttab" data-toggle="tab">contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            locations<b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#india" data-toggle="tab">India</a>
+                            </li>
+                            <li>
+                                <a href="#usa" data-toggle="tab">USA</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="hometab" class="tab-pane fade in active">
+                        <h3> home page</h3>
+                        <p> home contents</p>
+                    </div>
+                    <div id="contacttab" class="tab-pane fade ">
+                        <h3> contact page</h3>
+                        <p> home contents</p>
+                    </div>
+                    <div id="india" class="tab-pane fade">
+                        <h3> india page</h3>
+                        <p> home contents</p>
+                    </div>
+                    <div id="usa" class="tab-pane fade">
+                        <h3> usa page</h3>
+                        <p> home conte f                     ds  ssd sads dsd s d s d sdd sd s d  s d s  d s d d  f d f  d  dsds ds dssdssslkllsalk  dsjkdjssd s as dsa d sd <br />nts</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+    <br />
+    <br />
+    <br />
+    <h3>  43 tooltip</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <button data-placement="bottom" class="btn btn-primary" title="bootstrap toltip" data-toggle="tooltip">Button  r tooltip</button>
+
+
+                <br />
+                <br />
+
+                <button id="idtooltip" class="btn btn-primary">Button for tooltip by js</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================================ -->
+
+    <br />
+    <br />
+    <br />
+
+    <h3> 44 tooltip by manual</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                Name: <input type="text" id="txtname" title="bootstrap tooltip"
+                             data-toggle="tooltip" />
+                <span class="glyphicon glyphicon-info-sign" id="infosign"></span>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- ============================================================================================================ -->
+
+
+    <br />
+    <br />
+    <br />
+    <h3> 45 popover  youtube </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary" id="btnpopover" title="popover title for image"
+                        data-content="<img class='img-responsive' src='images/image1.jpg'>"
+                        data-html="true"
+                        data-placement="bottom"
+                        data-trigger="hover"
+                        data-toggle="popover">
+                    popover Example
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- ============================================================================================================ -->
+
+
+    <br />
+    <br />
+    <br />
+
+
+    <h3> 46alert kudvenkat</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <button id="btnsubmit" class="btn btn-primary">submit</button>
+
+                <br />
+                <br />
+                <!--  collpase is add to close it on first load and will be called at the button -->
+                <div id="myalert" class="alert alert-danger collapse">
+                    <!--<a href="#"  class="close"   data-dismiss="alert">&times;</a>
+                        <strong> hello</strong>kkkkkkk-->
+                    <a id="linkclose" href="#" class="close">&times;</a>
+                    <strong> hello</strong>kkkkkkk
+                </div>
+                <input type="text" id="submit" />
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+
+    <h3> tooltip by manual</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+
+    <h1> 51 carousel</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="carousel slide" id="bslide" data-ride="carousel" data-interval="2000" data-wrap="true">
+                    <ol class="carousel-indicators">
+                        <li data-target="#bslide" data-slide-to="0" class="active"></li>
+                        <li data-target="#bslide" data-slide-to="1"></li>
+                        <li data-target="#bslide" data-slide-to="2"></li>
+                        <li data-target="#bslide" data-slide-to="3"></li>
+
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/img2.jpg" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <p> hello this is paragraph </p>
+                                <h1>
+                                    image 1
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img src="images/img2.jpg" class="img-responsive" />
+                            <div class="carousel-caption ">
+                                <h1>
+                                    image 2
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img src="images/img2.jpg" class="img-responsive" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>
+                                    image 3
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img src="images/img2.jpg" class="img-responsive" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>
+                                    image 4
+                                </h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#bslide" class="carousel-control left" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#bslide" class="carousel-control right" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ============================================================================================================ -->
+
+    <h3> 3 colum caurosel</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div  class="carousel slide" id="bslide1"  data-interval="2000" data-wrap="true">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#bslide1" data-slide-to="0" class="active"></li>
+                        <li data-target="#bslide1" data-slide-to="1"></li>
+                        <li data-target="#bslide1" data-slide-to="2"></li>
+
+                    </ol>
+
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+
+                                <div class="col-xs-4">
+                                    <img src="images/img2.jpg" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <p> hello this is paragraph </p>
+                                        <h1>
+                                            image 1
+                                        </h1>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <img src="images/img2.jpg" class="img-responsive" />
+                                    <div class="carousel-caption ">
+                                        <h1>
+                                            image 2
+                                        </h1>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-xs-4">
+                                    <img src="images/img2.jpg" class="img-responsive" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>
+                                            image 3
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>   <!--row-->   
+
+                        </div>    <!--item-->
+
+    
+                        
+                        <div class="item ">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="images/img2.jpg" class="img-responsive" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>
+                                            image 4
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="images/img2.jpg" class="img-responsive" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>
+                                            image 5
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="images/img2.jpg" class="img-responsive" />
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>
+                                            image 6
+                                        </h1>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a href="#bslide1" class="carousel-control left" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#bslide1" class="carousel-control right" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+    <br />
+    <!-- ============================================================================================================ -->
+    <h3> </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+    <h3> </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+    <h3> </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ============================================================================================================ -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 38 39 accordion
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up')
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-up').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down')
+            });
+        });
+        $('#btnexpand').click(function () {
+            $('.panel-collapse.collapse').collapse('show');
+        });
+        $('#btncollapse').click(function () {
+            $('.panel-collapse.collapse.in').collapse('hide');
+        });
+
+
+        ///modal show n clode
+
+        $('#btnshowmodal').click(function () {
+            $('#loginmodal').modal('show');
+        });
+        $('#btnmodalclose').click(function () {
+            $('#loginmodal').modal('hide');
+        });
+        $('#loginmodal').on('show.bs.modal', function () {
+            alert("modal show")
+        });
+        $('#loginmodal').on('shown.bs.modal', function () {
+            alert("modal  on shown")
+        });
+        $('#loginmodal').on('hide.bs.modal', function () {
+            alert("modal going to hide")
+        });
+        $('#loginmodal').on('hidden.bs.modal', function () {
+            alert("after modal hidden")
+        });
+
+
+        // you can also call by id selector
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // tooltip js jquery by data attribute value
+
+        $('#idtooltip').tooltip({
+
+            placement: 'top',
+            title: "<h3>help</h3><p> click to submit this page</p>",
+            animation: true,
+            delay: { show: 300, hide: 500 },
+            html: true
+
+        });
+
+        /////
+        // manaul tooltip call
+        $('#txtname').tooltip({
+            //                        trigger: 'click'
+            trigger: 'manual'
+
+        });
+        // on click button show
+        //$('#infosign').click(function () {
+        //    $('#txtname').tooltip('toggle');
+        //});
+        // on hover button show
+        $('#infosign').hover(function () {
+            $('#txtname').tooltip('toggle');
+        });
+
+        //to call popover
+        $('#btnpopover').popover();
+        // to calll alert
+        $('#btnsubmit').click(function () {
+            $('#myalert').show('fade');
+
+            setTimeout(function () {
+                $('#myalert').hide('fade');
+            }, 2000);
+        });
+        $('#linkclose').click(function () {
+            $('#myalert').hide('fade');
+
+
+        });
+
+        // 37 collaspe javascript code
+        $('#togglebutton').click(function () {
+            $('#javagallary').collapse('toggle');
+        });
+        $('#hidebutton').click(function () {
+            $('#javagallary').collapse('hide');
+        });
+        $('#showbutton').click(function () {
+            $('#javagallary').collapse('show');
+        });
+        $('#javagallary').on('show.bs.collapse', function () {
+            alert('about to');
+        });
+        $("#javagallary").on('shown.bs.collapse', function () {
+            alert('anfter shown');
+        });
+        $('#javagallary').on('hide.bs.collapse', function () {
+            alert('before hide');
+        });
+        $('#javagallary').on('hidden.bs.collapse', function () {
+            alert('after hidden')
+        });
+
+
+        //delete data-ride=carousel call /trigger carousel manually javascript.
+        $('bslide1').carousel();
+    </script>
+</body>
+</html>
+
+
+
+<!--html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}-->

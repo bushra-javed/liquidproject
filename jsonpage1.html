@@ -1,0 +1,86 @@
+﻿
+    <div style="height:100px;">
+
+    </div>
+    <div class="container">
+
+        <h1>
+            Fetch data from JSON object
+
+        </h1>
+        <button class="btn btn-outline-primary" id="jsondata">see more </button>
+
+        <div id="JSON_LOCAL"></div>
+
+
+    </div>
+    <script src="Scripts/jquery-3.2.1.js"></script>
+<script src="ajaxjquery.js"></script>
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $.get("footer.html", function (data) {
+                $("#footer-place-holder").replaceWith(data);
+            });
+            $.get("social-media.html", function (data) {
+                $("#social-media-place-holder").replaceWith(data);
+            });
+
+
+            var counter = 1;
+            var outputjson = '';
+            var btnjson = $('#jsondata');
+            btnjson.bind('click', loadjson);
+
+
+            function loadjson() {
+
+                var xhttpjson = new XMLHttpRequest();
+                xhttpjson.open("GET", "peoplejson" + counter + ".json", true);
+                xhttpjson.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        // Typical action to be performed when the document is ready:
+                        //document.getElementById("demo").innerHTML = xhttp.responseText;
+                        console.log(" before parse"+xhttpjson.responseText);
+                        var response = JSON.parse(xhttpjson.responseText);
+                        console.log("after parse " +response.people[0].firstname);
+                        var people = response.people;
+                        outputjson += '<table class="table table-bordered table-striped"  style="border:2px solid black;">';
+                        outputjson += '<tr  style="border:2px solid black;"><th>First Name </th><th>First Name </th><th>age </th><th>street </th><th>state </th></tr>'
+                        datafunction(people);
+                    }
+                };
+                xhttpjson.send();
+                counter++;
+                if (counter > 3) {
+                    //btnjson.hide();
+                };
+
+            };
+            function datafunction(people) {
+                outputjson += '</br></br></br></br><h1>employee  detail</h1></br>'
+                //for (var i = 0; i < people.length; i++)
+                for (var i in  people)
+                {
+                    //console.log(people[i]);
+                    outputjson += '<tr style="border:1px solid blue;">';
+                    outputjson += '<td style="border:1px solid blue;">' + 'first name:     ' + people[i].firstname + '</td>';
+                    outputjson += '<td style="border:1px solid blue;">' + 'last name:       ' + people[i].lastname + ' </td>';
+                    outputjson += '<td style="border:1px solid blue;">' + 'age is :       ' + people[i].age + ' </td>';
+
+                    console.log(people[i].address.street);
+                    outputjson += '<td style="border:1px solid blue;">' + 'adreess street:     ' + people[i].address.street + '</td>';
+                    outputjson += '<td style="border:1px solid blue;">' + 'adreess street:     ' + people[i].address.state + '</td>';
+                     outputjson += '</tr>';
+                }
+                //alert(data);
+                outputjson += '</table>'
+                outputjson += '</br>'
+
+                $('#people').html(outputjson);
+
+            }
+
+
+        });-->
+
+    <!--//</script>-->

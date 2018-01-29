@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+
+    <script src="../Scripts/angular.js"></script>
+    <!--//<script src="angular-script.js"></script>-->
+    <script src="angular-script4.js"></script>
+    <script src="filter-angular.js"></script>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+      
+        /*//arrow-up down form tutorial 10*/
+        .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid black;
+            display:inline-block;
+        }
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid black;
+            display: inline-block;
+        }
+        th{
+            cursor:pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!--<div ng-controller="myController">
+        <h3> calling emplyee object tutorial 3</h3>
+        <div>
+            employee firstName{{employee.firstname}}
+        </div>
+        <div>
+            employee lastName
+            {{employee.lastname}}
+        </div>
+        <div>
+            employee age{{employee.age}}
+        </div>
+    </div>-->
+    <!--  img 404 error lecture 4 -->
+    <!--<div ng-controller="myController">
+        <h3> this country information tutorial 4</h3>
+        <div>
+            name{{country.name}}
+        </div>
+        <div>
+            capital name    {{country.capital}}
+        </div>
+        <div>
+            <img src="{{country.flag}}"
+                 alt="{{country.name +'flag'}}" style="width:50px ;height:50px;" />
+        </div>
+    </div>-->
+    <!--<h3>tytorial  5</h3>-->
+    <!--<div ng-controller="myController">
+        <form>
+            <div class="row">
+
+                <div class="col-sm-2 text-lg-right">
+                    name
+                </div>
+                <div class="col-sm-6">
+
+                    <input class="form-control" type="text" ng-model="employee.firstname" />
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-2 text-lg-right">
+                    last name
+                </div>
+                <div class="col-sm-6">
+
+                    <input class="form-control" type="text" ng-model="employee.lastname" />
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-2 text-lg-right">
+                    age
+                </div>
+                <div class="col-sm-6">
+
+                    <input class="form-control" type="text" ng-model="employee.age" />
+                </div>
+            </div>
+
+
+        </form>
+        <br />
+        <br />
+        <div class="container">
+
+            <div>
+
+                name {{employee.firstname}}
+            </div>
+            <div>
+
+                last name {{employee.lastname}}
+            </div>
+            <div>
+
+                age {{employee.age}}
+            </div>
+        </div>
+    </div>-->
+    <!-- lecture 6 part1 -->
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div ng-controller="myController">
+
+                    <table class="table-striped table-bordered table">
+                        <thead>
+                            <tr>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>GENDER</th>
+                                <th>SALARY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="e in employees">
+                                <td>{{e.firstname}}</td>
+                                <td>{{e.lastname}}</td>
+                                <td>{{e.gender}}</td>
+                                <td>{{e.salary}}</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- lecture 6 part2 -->
+    <!--<h3> list in repaet</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div ng-controller="myController">
+                    <ul>
+                        <li ng-repeat="country in countries">
+                            {{country.name}}  have  index={{$index}}
+                            <ul>
+                                <li ng-repeat="city in country.cities">
+
+                                    {{city.name}} of parent index={{$parent.$index}},index={{$index}}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- lecture 7 -->
+    <!--<h3> event handling</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div ng-controller="myController">
+                   <table class="table  table-bordered">
+                       <thead>
+                           <tr>
+                               <th>Name</th>
+                               <th>likes</th>
+                               <th>dislikes</th>
+                               <th>likes/dislikes</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr ng-repeat="tec in technologies">
+                               <td> {{tec.name}}</td>
+                               <td> {{tec.likes}}</td>
+                               <td> {{tec.dislikes}}</td>
+                               <td>
+                               <input type="button" value="likes" ng-click="incrementlikes(tec)" />
+                               <input  type="button" value="dislikes" ng-click="incrementdislikes(tec)"/>
+                           </tr>
+                       </tbody>
+                   </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- lecture 8 -->
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div ng-controller="myController">
+                    rows to display <input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+                    <br />
+                    <br />
+                    <table class="table-striped table-bordered table">
+                        <thead>
+                            <tr>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>Date Of Birth</th>
+                                <th>GENDER</th>
+                                <th>SALARY(number)</th>
+                                <th>SALARY(currency)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--<tr ng-repeat="e in employees | limitTo:3">-->
+    
+    <!--tr ng-repeat="e in employees | limitTo:rowlimit">
+                                <td>{{e.firstname |uppercase}}</td>
+                                <td>{{e.lastname|uppercase}}</td>
+                                <td>{{e.dob|date:"dd/MM/yyyy"}}</td>
+                                <td>{{e.gender|lowercase}}</td>
+                                <td>{{e.salary|number:2}}</td>
+                                <td>{{e.salary|currency:"$":1}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--  tutorial 9 -->
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div ng-controller="myController">
+                    <h3> tutorial 9</h3>
+                    orderby: <select ng-model="sortcolumn">
+                        <option value="firstname">First name ASC</option>
+                        <option value="lastname">last name ASC</option>
+                        <option value="gender">gender ASC</option>
+                        <option value="dob"> date of Birth ASC</option>
+                        <option value="-salary">salary DESC</option>
+                        <option value="salary">salary ASC</option>
+                    </select>
+                    <br />
+                    <br />
+                    <table class="table-striped table-bordered table">
+                        <thead>
+                            <tr>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>Date Of Birth</th>
+                                <th>GENDER</th>
+                                <th>SALARY(number)</th>
+                                <th>SALARY(currency)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="e in employees | orderBy:sortcolumn">
+                                <td>{{e.firstname |uppercase}}</td>
+                                <td>{{e.lastname|uppercase}}</td>
+                                <td>{{e.dob|date:"dd/MM/yyyy"}}</td>
+                                <td>{{e.gender|lowercase}}</td>
+                                <td>{{e.salary|number:2}}</td>
+                                <td>{{e.salary|currency:"$":1}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--  tutorial 10 -->
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div ng-controller="myController">
+                    <h3> tutorial 9</h3>
+                    <br />
+                    <br />
+                    <table class="table-striped table-bordered table">
+                        <thead>
+                            <tr>
+                                <th ng-click="sortData('firstname')">
+                                FIRST NAME
+                                <div ng-class="getsortclass('firstname')"></div>
+                                </th>
+                                <th ng-click="sortData('lastname')">
+                                LAST NAME
+                                    <div ng-class="getsortclass('lastname')"></div>
+                                </th>
+                                <th ng-click="sortData('dob')">
+                                    DOB
+                                    <div ng-class="getsortclass('dob')"></div>
+                                </th>
+
+                                <th ng-click="sortData('gender')">
+                                    gender
+                                    <div ng-class="getsortclass('gender')"></div>
+                                </th>
+                                <th ng-click="sortData('salary')">
+                                SALARY(number)
+                                    <div ng-class="getsortclass('salary')"></div>
+                                </th>
+                                
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr ng-repeat="e in employees | orderBy:sortcolumn:reversesort">
+                                <td>{{e.firstname |uppercase}}</td>
+                                <td>{{e.lastname|uppercase}}</td>
+                                <td>{{e.dob|date:"dd/MM/yyyy"}}</td>
+                                <td>{{e.gender|lowercase}}</td>
+                                <td>{{e.salary|number:2}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+    <!--  tutorial 11 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div ng-controller="myController">
+                    <h3> search by first name last name </h3>
+                    <!--search:<input type="text" placeholder="search name city" ng-model="searchtext" /> search on all fields-->
+                    first search:<input type="text" placeholder="search first name" ng-model="searchtext.firstname" />
+                     last search:<input type="text" placeholder="search last name" ng-model="searchtext.lastname" />
+                    <br />
+                    <br />
+                    <table class="table-striped table-bordered table">
+                        <thead>
+                            <tr>
+                                <th>FIRST NAME</th>
+                                <th>LAST NAME</th>
+                                <th>Date Of Birth</th>
+                                <th>GENDER</th>
+                                <th>SALARY(number)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr ng-repeat="e in employees | filter:searchtext">
+                                <td>{{e.firstname |uppercase}}</td>
+                                <td>{{e.lastname|uppercase}}</td>
+                                <td>{{e.dob|date:"dd/MM/yyyy"}}</td>
+                                <td>{{e.gender|lowercase}}</td>
+                                <td>{{e.salary|number:2}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
