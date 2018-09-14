@@ -25,9 +25,6 @@ p {
 a {
     text-decoration: none;
 }
-ul{
-    /*list-style:none;*/
-}
 .part-all-button {
     text-transform: uppercase;
     display: block;
@@ -240,7 +237,7 @@ ul{
         border-radius: 10%;
         width: 30px !important;
         height: 30px !important;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         
         }
 
@@ -527,7 +524,7 @@ ul.team-part4-ul li {
     /*min-height: 100vh;*/
     width: 100%;
     background-color: rgba(255,255,255,.3);
-    /*min-height: calc(100vh - 75px); /* 100% of the viewport height */ */
+    /*min-height: calc(100vh - 75px); /* 100% of the viewport height */ 
 }
 
 .team-part6-detail {
@@ -742,8 +739,8 @@ text-align:justify;
     width: 100%;
     height: 80%;
     margin-top: 20%;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
+    /* -webkit-box-shadow: 0 10px 6px -6px #777; */
+    /* -moz-box-shadow: 0 10px 6px -6px #777; */
     /*box-shadow: 0 10px 6px -6px #777;*/
 }
 
@@ -762,16 +759,16 @@ text-align:justify;
     /*opacity: .8;*/
     border: 1px solid gray;
     background-color: rgba(2,6,20,.4);
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
+    /* -webkit-box-shadow: 0 10px 6px -6px #777; */
+    /* -moz-box-shadow: 0 10px 6px -6px #777; */
     /*box-shadow: 0 10px 6px -6px #777;*/
 }
 .team-part8-detail .text-div1 h5{
     color:darkorange;
 }
-.view-profile1:hover {
+/* .view-profile1:hover { */
     /*box-shadow: 0 1px 0px -6px #777;*/
-} 
+/* }  */
 .view-profile1,
 .view-profile2,
 .view-profile3,
@@ -869,10 +866,6 @@ text-align:justify;
 /* social media side bar start*/
 
 
-.sidebar-social{
-    /*border:1px solid red;*/
-
-}
 .sidebar-social-wrapper {
     /*border: 1px solid green;*/
     height: 360px;
@@ -891,7 +884,7 @@ text-align:justify;
     width: 50px;
     height: 50px;
     font-size: 21px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     text-align: center;
     padding: 10px 10px;
     background-color:rgba(0,0,0,.3);
@@ -1044,7 +1037,7 @@ background-color:#fff;
     width: 50px;
     height: 50px;
     font-size: 21px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     text-align: center;
     /*line-height:35;*/
     padding: 10px 10px;
@@ -1387,7 +1380,7 @@ hr {
         width: 40px;
         height: 40px;
         font-size: 15px;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         text-align: center;
         /*padding: 10px 10px;*/
     /*//    background-color: rgba(0,0,0,.3);*/
