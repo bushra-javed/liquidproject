@@ -1059,7 +1059,9 @@ a.scrollup i:hover {
 a.scrollup:hover, a.scrollup:active, a.scrollup:focus {
     /*opacity: 1;*/
     text-decoration: none;
+    color:red;
 }
+
 
 /*top end*/
 /*FAQ part10 start*/
