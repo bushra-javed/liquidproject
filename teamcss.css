@@ -96,6 +96,7 @@ a {
 }
 .p{
     color:red;
+    font: outline;
 }
 .title-banner1 {
     background-image: url('IMAGES/15-banner1024x586.jpg');
@@ -952,10 +953,10 @@ text-align:justify;
     background-color:lightgray;
 
 }
-.team-footer-bg-color{
+/* .team-footer-bg-color{
 
-}
-.col-md-4.footer-div.col-sm-6 {
+} */
+/* .col-md-4.footer-div.col-sm-6 { */
     /*margin:0 !important;*/
     /*padding: 0 !important;*/
     /*-webkit-box-shadow: 0 10px 6px -6px #777;*/
@@ -963,7 +964,7 @@ text-align:justify;
     /*box-shadow: 0 10px 6px -6px #777;*/
     /*-webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;*/
-} 
+/* }  */
 .team-footer-detail {
    color:#fff;
 
@@ -1062,11 +1063,11 @@ a.scrollup:hover, a.scrollup:active, a.scrollup:focus {
 
 /*top end*/
 /*FAQ part10 start*/
-.team-part10-FAQ{}
+/* .team-part10-FAQ{}
 .team-part10-banner {}
 .team-part10-bg-color {}
 .team-part10-detail {}
-.team-part10-detail-1{}
+.team-part10-detail-1{} */
 
 /*FAQ part10 end*/
 
