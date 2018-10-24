@@ -9,6 +9,22 @@ $(document).ready(function () {
 
     });
 
+    $('.link-one').hover(function () {
+        $('#my-menu1').css('border-top','5px solid red');
+    },function(){
+            $('#my-menu1').css('border-top' , '5px solid red');
+        });
+
+
+
+        $('.link-two').hover(function () {
+            $('#my-menu2').css('border-top','5px solid green');
+        },function(){
+                $('#my-menu2').css('border-top' , '5px solid green');
+            });
+
+
+
 
     //    //    function () {
 
