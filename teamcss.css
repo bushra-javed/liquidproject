@@ -974,6 +974,8 @@ text-align:justify;
     .team-footer-detail-2 ul li,
     .team-footer-detail-3 ul li {
     border-bottom: 1px solid #fff;
+    margin: 7px 10px;
+    color: #fff;
 }
 
 .team-footer-detail-1 {

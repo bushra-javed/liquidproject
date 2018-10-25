@@ -71,4 +71,29 @@ $(document).ready(function () {
         $("#wrapper1").css('display', 'block'); // here you can also use show();
     }
 
+
+
+
+
+
+
+    $('.toggle-button').on('click', function () {
+        $('li:has("ul")').children('ul').slideUp('fast');
+        // $('#wrapper1').toggle();
+        // $('#sidenavContainer').toggle();
+        $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
+        $('#sidenavContainer').toggleClass('active');
+    });
+    if ((screen.width > 555)) {
+        // if screen size is 1025px wide or larger
+        $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
+    }
+    else if ((screen.width <= 555)) {
+        // if screen size width is less than 1024px
+        $("#sidenavContainer").css('display', 'block'); // here you can also use show();
+    }
+
+
+
+    
 });
