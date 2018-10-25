@@ -187,13 +187,13 @@ a {
 
 /* team part1*/
 .team-part1-banner {
-    background-image: url('IMAGES/bottom-rectangle-orange.jpg');
+    background-image: url('IMAGES/bottom-rectangle.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .team-part1-detail {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .part1-header {
@@ -220,12 +220,30 @@ a {
     padding: 0;
     border: none;
     /*1px solid pink !important;*/
-    background-color:rgba(128,128,128,.5) !important;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
+    /* background-color:rgba(128,128,128,.5) !important; */
+    /* -webkit-box-shadow: 0 10px 6px -6px #777; */
+    /* -moz-box-shadow: 0 10px 6px -6px #777; */
+    /* box-shadow: 0 10px 6px -6px #777; */
+}
+.img-thumbnail1 {
+    margin: 0 !important;
+    padding: 0 !important;
+    /* background-color:rgba(128,128,128,.5) !important; */
+    /* -webkit-box-shadow: 0 10px 6px -6px #777; */
+    /* -moz-box-shadow: 0 10px 6px -6px #777; */
     box-shadow: 0 10px 6px -6px #777;
+    border: 2px solid orange !important;
 }
 
+.img-thumbnail1 img{
+    border-bottom: 1px solid orange;
+}
+.caption{
+    margin-top: 20px;
+}
+.caption h5{
+    color:gray;
+}
 .team-part1-social li {
     display: inline-block;
 }
