@@ -533,6 +533,9 @@
                 $("#social-media-place-holder").replaceWith(data);
             });
 
+
+            
+
             //link1
             var check1 = 1;
             var output1 = '';
@@ -545,8 +548,9 @@
                 //output = "";
 
                 var xhttp = new XMLHttpRequest();
-                xhttp.open("GET", "about1.html", true);
-                xhttp.onreadystatechange = function () {
+                xhttp.open("GET", "about1.html", false);
+                xhttp.onload = function (e) {
+//                xhttp.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check1 == 1) {
                             output1 += this.responseText;
@@ -571,8 +575,9 @@
             function loaddata2() {
                 //output = "";
                 var xhttp1 = new XMLHttpRequest();
-                xhttp1.open("GET", "team1.html", true);
-                xhttp1.onreadystatechange = function () {
+                xhttp1.open("GET", "team1.html", false);
+                xhttp1.onload = function (e) {
+//                xhttp1.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check2 == 1) {
                             output2 += this.responseText;
@@ -601,8 +606,9 @@
             function loaddata3() {
                 //output = "";
                 var xhttp3 = new XMLHttpRequest();
-                xhttp3.open("GET", "approach1.html", true);
-                xhttp3.onreadystatechange = function () {
+                xhttp3.open("GET", "approach1.html", false);
+                xhttp3.onload = function (e) {
+//                xhttp3.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check3 == 1) {
                             output3 += this.responseText;
@@ -629,7 +635,7 @@
             function loaddata4() {
                 //output = "";
                 var xhttp4 = new XMLHttpRequest();
-                xhttp4.open("GET", "companies1.html", true);
+                xhttp4.open("GET", "companies1.html", false);
                 xhttp4.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check4 == 1) {
