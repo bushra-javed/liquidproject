@@ -647,7 +647,7 @@
                 $(window).scrollTop(0);
                 //output = "";
                 var xhttp4 = new XMLHttpRequest();
-                xhttp4.open("GET", "companies1.html", false);
+                setTimeout(200);
                 xhttp4.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check4 == 1) {
@@ -658,11 +658,12 @@
                         else if (check4 > 1) {
                             output4 += "";
                             $('#content-container').html(output4);
-
+                            
                         }
 
                     }
                 };
+                xhttp4.open("GET", "companies1.html", false);
                 xhttp4.send();
             }
 
