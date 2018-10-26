@@ -149,9 +149,9 @@
                         <i class="up-arrow1 fa fa-angle-up fa-2x pull-right align-middle" aria-hidden="true"></i>
                     </a>
                     <ul id="submenu1" class="submenu">                                                                                                                                                                                  
-                        <li><a  class="link1" href="#about"> about us <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
-                        <li><a class="link2" href="#team"> team<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i> </a></li>
-                        <li><a class="link3" href="#approach">approach<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a  class="link1 slide-link" href="#about"> about us <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a class="link2 slide-link" href="#team"> team<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i> </a></li>
+                        <li><a class="link3 slide-link" href="#approach">approach<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
                     </ul>
 
                 </li>
@@ -162,9 +162,9 @@
                         <i class="up-arrow1 fa fa-angle-up fa-2x pull-right align-middle" aria-hidden="true"></i>
                     </a>
                     <ul id="submenu2" class="submenu">
-                        <li><a href="#Companies" class="link4">our companies<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
-                        <li><a href="#FAQ" class="link5">FAQ<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
-                        <li><a href="#Registration" class="link6">Registration <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#Companies" class="link4 slide-link">our companies<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#FAQ" class="link5 slide-link">FAQ<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#Registration" class="link6 slide-link">Registration <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
                     </ul>
                 </li>
                 <li>
@@ -174,7 +174,7 @@
                         <i class="up-arrow1 fa fa-angle-up fa-2x pull-right align-middle" aria-hidden="true"></i>
                     </a>
                     <ul id="submenu3" class="submenu">
-                        <li><a href="#category" class="link7">category<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
+                        <li><a href="#category" class="link7 slide-link">category<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
                <!--  -->
                         <!--<li><a href="#JSONdata" class="link8">JSON DATA<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>
                         <li><a href="#JSONAPI" class="link9">JSON API<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a></li>-->
@@ -188,8 +188,8 @@
 
 
                 <!--//<a  href="http://twitter.com"><i class="fa fa-twitter"></i></a>-->
-                <!--<a  href="http://facebook.com"><i class="fa fa-facebook"></i></a>-->
-                <!--<a href="http://youtube.com"><i class="fa fa-youtube"></i></a>-->
+                <a  href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="http://youtube.com"><i class="fa fa-youtube"></i></a>
             </div>
 
         </div>
@@ -501,17 +501,17 @@
     <div id="social-media-place-holder">
 
     </div>
-
-
-
+    
+    
+    
     <div id="footer-place-holder">
-
+        
     </div>
-
+    
     <!--<p class="float-sm-right">hell</p>-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
+    
     <script src="Scripts/jquery-3.2.1.js"></script>
     <!--<script src="Scripts/jquery-3.2.1.slim.js"></script>-->
     <script src="Scripts/umd/popper.min.js"></script>
@@ -519,20 +519,25 @@
     <script src="jqueryALL.js"></script>
     <script src="custom-team-js.js"></script>
     <script src="indexjquery.js"></script>
-
-
-
+    
+    
+    
     <!-- code for ajax check -->
-
+    
     <script type="text/javascript">
         $(document).ready(function () {
+            
+            
             $.get("footer1.html", function (data) {
                 $("#footer-place-holder").replaceWith(data);
             });
             $.get("social-media1.html", function (data) {
                 $("#social-media-place-holder").replaceWith(data);
             });
+            
 
+            
+            
             //link1
             var check1 = 1;
             var output1 = '';
@@ -543,36 +548,43 @@
             btn.bind('click', loaddata);
             function loaddata() {
                 //output = "";
-
+                //$("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
+                
                 var xhttp = new XMLHttpRequest();
-                xhttp.open("GET", "about1.html", true);
-                xhttp.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                        if (check1 == 1) {
-                            output1 += this.responseText;
-                            check1++;
-                            $('#content-container').html(output1);
+                xhttp.open("GET", "about1.html", false);
+                xhttp.onload = function (e) {
+                    //                xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            if (check1 == 1) {
+                                output1 += this.responseText;
+                                check1++;
+                                $('#content-container').html(output1);
+                            }
+                            else if (check1 > 1) {
+                                output1 += "";
+                                $('#content-container').html(output1);
+                                
+                            }
                         }
-                        else if (check1 > 1) {
-                            output1 += "";
-                            $('#content-container').html(output1);
-
-                        }
-                    }
                 };
                 xhttp.send();
             }
-
+            
             //      link2
             output2 = "";
             var check2 = 1;
             var btn1 = $('.link2');
             btn1.bind('click', loaddata2);
             function loaddata2() {
+//                $("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
+                
                 //output = "";
                 var xhttp1 = new XMLHttpRequest();
-                xhttp1.open("GET", "team1.html", true);
-                xhttp1.onreadystatechange = function () {
+                xhttp1.open("GET", "team1.html", false);
+                xhttp1.onload = function (e) {
+//                xhttp1.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check2 == 1) {
                             output2 += this.responseText;
@@ -599,10 +611,14 @@
             var btn3 = $('.link3');
             btn3.bind('click', loaddata3);
             function loaddata3() {
+//                $("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
+                
                 //output = "";
                 var xhttp3 = new XMLHttpRequest();
-                xhttp3.open("GET", "approach1.html", true);
-                xhttp3.onreadystatechange = function () {
+                xhttp3.open("GET", "approach1.html", false);
+                xhttp3.onload = function (e) {
+//                xhttp3.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check3 == 1) {
                             output3 += this.responseText;
@@ -627,9 +643,11 @@
             var btn4 = $('.link4');
             btn4.bind('click', loaddata4);
             function loaddata4() {
+  //              $("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
                 //output = "";
                 var xhttp4 = new XMLHttpRequest();
-                xhttp4.open("GET", "companies1.html", true);
+                setTimeout(200);
                 xhttp4.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check4 == 1) {
@@ -640,11 +658,12 @@
                         else if (check4 > 1) {
                             output4 += "";
                             $('#content-container').html(output4);
-
+                            
                         }
 
                     }
                 };
+                xhttp4.open("GET", "companies1.html", false);
                 xhttp4.send();
             }
 
@@ -657,9 +676,13 @@
             var btn5 = $('.link5');
             btn5.bind('click', loaddata5);
             function loaddata5() {
+                // $('#content-container').css('top','0px');//offset().top-100;
+                // $('#content-container').offset({top:0});
+//                $("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
                 //output = "";
                 var xhttp5 = new XMLHttpRequest();
-                xhttp5.open("GET", "FAQ1.html", true);
+                xhttp5.open("GET", "FAQ1.html", false);
                 xhttp5.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check5 == 1) {
@@ -685,19 +708,23 @@
             var btn6 = $('.link6');
             btn6.bind('click', loaddata6);
             function loaddata6() {
+//                $("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
                 //output = "";
                 var xhttp6 = new XMLHttpRequest();
-                xhttp6.open("GET", "formval_jquery1.html", true);
+                xhttp6.open("GET", "formval_jquery1.html", false);
                 xhttp6.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         if (check6 == 1) {
                             output6 += this.responseText;
                             check6++;
                             $('#content-container').html(output6);
+                            $('#content-container').offset().top-100;
                         }
                         else if (check6 > 1) {
                             output6 += "";
                             $('#content-container').html(output6);
+                            $('#content-container').offset().top-100;
 
                         }
 
@@ -715,6 +742,8 @@
             btn7.bind('click', loaddata7);
             function loaddata7() {
                 //output = "";
+                $(window).scrollTop(0);
+
                 var xhttp7 = new XMLHttpRequest();
                 xhttp7.open("GET", "category1.html", true);
                 xhttp7.onreadystatechange = function () {
@@ -741,6 +770,8 @@
             var btn8 = $('.link8');
             btn8.bind('click', loaddata8);
             function loaddata8() {
+//                $("html").animate({ scrollTop: 0 }, "fast");
+                $(window).scrollTop(0);
                 //output = "";
                 var xhttp8 = new XMLHttpRequest();
                 //xhttp8.open("GET", "jsonpage1.html", true);
@@ -770,6 +801,7 @@
             var btn9 = $('.link9');
             btn9.bind('click', loaddata9);
             function loaddata9() {
+                $(window).scrollTop(0);
                 //output = "";
                 var xhttp9 = new XMLHttpRequest();
                 //xhttp9.open("GET", "jsonpage1.html", true);
