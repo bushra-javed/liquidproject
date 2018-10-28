@@ -1,4 +1,9 @@
-﻿/*
+﻿body.fixedPosition
+ {
+    position: fixed;
+ }
+
+/*
     social media colors
      /*f= #3b5998;
     t= #55acee; 
