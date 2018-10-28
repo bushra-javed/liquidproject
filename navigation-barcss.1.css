@@ -10,6 +10,11 @@ body {
 
 }
 
+.fixedPosition
+    {
+       position: fixed;
+    }
+
 ul li {
     list-style: none;
 }
@@ -86,7 +91,7 @@ a.logo-sm.bushra-brand
     padding: 2px;
     box-shadow: 1px 1px 2px #FFF;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: -5px;
 }
 
 .logoboth {
@@ -472,18 +477,25 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     /* -o-transition: all .25s ease-in-out; */
     /* transition: all .25s ease-in-out; */
     transition: all 500ms linear;
-    /* border: 11px solid red; */
+    /* visibility: hidden; */
+    overflow: hidden;
 }
 
 #sidenavContainer.active {
-
     left: 0;
+    overflow: auto;
+    /* border: 11px solid red; */
+    /* visibility:visible; */
     /* transition: all .25s ease-out; */
 
     /* transition: left .3s; */
 
     /* border: 11px solid green; */
 
+}
+
+.hiddenclass{
+overflow: hidden;
 }
 
 #wrapper1 {

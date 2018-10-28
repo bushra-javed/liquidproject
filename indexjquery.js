@@ -75,15 +75,23 @@ $(document).ready(function () {
 
 
 
+
+
     $('.slide-link').on('click', function () {
         $('li:has("ul")').children('ul').slideUp('fast');
         // $('#wrapper1').toggle();
         // $('#sidenavContainer').toggle();
         // $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
         $('#sidenavContainer').toggleClass('active');
+        // $("body").css('overflow', 'hidden'); // you can also use $(".yourClass").hide();
+        $("body").toggleClass('hiddenclass'); // you can also use $(".yourClass").hide();
+        
     });
 
 
+       
+
+    
 
     $('.toggle-button').on('click', function () {
         $('li:has("ul")').children('ul').slideUp('fast');
@@ -91,7 +99,24 @@ $(document).ready(function () {
         // $('#sidenavContainer').toggle();
         // $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
         $('#sidenavContainer').toggleClass('active');
+        $("body").toggleClass('hiddenclass'); // you can also use $(".yourClass").hide();
+        
     });
+
+
+
+    
+    // if($('#sidenavContainer').is(':hidden'))
+    // {
+    //    $('body').addClass("fixedPosition");
+    //    alert('visible')
+    // }
+    // else
+    // {
+    //    $('body').removeClass("fixedPosition");
+    //    alert('invisible')
+       
+    // }
     if ((screen.width > 555)) {
         // if screen size is 1025px wide or larger
         $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
