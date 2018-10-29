@@ -1004,16 +1004,10 @@ padding: 30px;
     }
     
     .team-footer-detail-1 {
-        /*border: 3px solid gray;*/
         padding: 10px 20px;
-        /*margin-top: 30px;*/
-        /*margin-bottom: 30px;*/
     }
     
     .team-footer-detail-2 {
-        /*margin-top: 30px;*/
-   
-        /*margin-bottom: 30px;*/
         padding: 10px 20px;
     }
    
@@ -1021,13 +1015,9 @@ padding: 30px;
         .team-footer-detail-2 h4{
     padding: 10px 0;
     color: #444444 !important;
-    /* background-color: #fff; */
-    /* font-weight: 700; */
-
 
 }
     .team-footer-detail-3 h4 {
-        
     padding: 10px 0;
     color:#444444 !important;   
     background-color: #fff;
