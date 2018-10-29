@@ -973,8 +973,8 @@ text-align:justify;
 
 .team-footer
 .team-footer-banner{
-    background-color:#444444;
-
+    background-color:gray;
+padding: 30px;
 }
 /* .team-footer-bg-color{
 
@@ -987,58 +987,78 @@ text-align:justify;
     /*box-shadow: 0 10px 6px -6px #777;*/
     /*-webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;*/
-/* }  */
-.team-footer-detail {
-   color:#fff;
-
-}
-
-.team-footer-detail-1 ul li,
+    /* }  */
+    .team-footer-detail {
+        /* color:#fff; */
+        border: 1px solid green;
+        margin: 30px;
+    }
+    
+    .team-footer-detail-1 ul li,
     .team-footer-detail-2 ul li,
     .team-footer-detail-3 ul li {
-    border-bottom: 1px solid #fff;
-    margin: 7px 10px;
-    color: #fff;
-}
-
-.team-footer-detail-1 {
-    /*border: 3px solid gray;*/
-    padding: 10px 20px;
-    /*margin-top: 30px;*/
-    /*margin-bottom: 30px;*/
-}
-
-.team-footer-detail-2 {
-    /*margin-top: 30px;*/
-    /*margin-bottom: 30px;*/
-    padding: 10px 20px;
-}
-.team-footer-detail-3 {
-    /*margin-top: 30px;*/
-    /*margin-bottom: 30px;*/
-    position: relative;
-    top: 0;
-    left: 0;
-} 
-    
-  .team-footer-detail-3 img{
-    width:300px;
-    height:150px;
-    
-}
-
-    .team-footer-detail-3 .text-div {
-        position: absolute;
-        width: 250px;
-        height: 110px;
-        top: 70px;
-        left:50px;
-        border: 3px solid gray;
-        z-index: 9999;
-        background-color: rgba(0,0,0,.4);
+        border-bottom: 1px solid #fff;
+        margin: 7px 10px;
         color: #fff;
-        padding:10px;
-        }
+        text-align: left;
+    }
+    
+    .team-footer-detail-1 {
+        /*border: 3px solid gray;*/
+        padding: 10px 20px;
+        /*margin-top: 30px;*/
+        /*margin-bottom: 30px;*/
+    }
+    
+    .team-footer-detail-2 {
+        /*margin-top: 30px;*/
+   
+        /*margin-bottom: 30px;*/
+        padding: 10px 20px;
+    }
+   
+    .team-footer-detail-1 h4,
+        .team-footer-detail-2 h4{
+    padding: 10px 0;
+    color: #444444 !important;
+    /* background-color: #fff; */
+    /* font-weight: 700; */
+
+
+}
+    .team-footer-detail-3 h4 {
+        
+    padding: 10px 0;
+    color:#444444 !important;   
+    background-color: #fff;
+    font-weight: 700;
+} 
+
+.team-footer-detail-3{
+    /* width:300px; */
+    background: url("IMAGES/cagatay-orhan-21446.jpg");
+    background-size: cover;
+    height: 100%;
+    /* border: 1px solid green; */
+    /* height:150px; */
+}
+
+.team-footer-detail-3 .text-div {
+    width: 80%;
+    height: 60%;
+    border: 3px solid gray; 
+    margin: auto;
+    padding: 10px;
+    z-index: 9999;
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+    /* padding:10px; */
+    text-align: center;
+}
+.text-div .footer-table{
+    /* border: 1px solid #fff; */
+    margin: auto;
+}
     .footer-bottom-div{
         
 border:1px solid gray;
@@ -1422,7 +1442,7 @@ hr {
 
     .team-footer-detail-3 .text-div {
         top: 70px;
-        left: 100px;
+        left: 80px;
     }
 
 

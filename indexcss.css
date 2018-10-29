@@ -9,6 +9,9 @@
     text-align: center;
 }
 
+.team-content{
+box-shadow: 0px 0px 3px #444444;
+}
 .team-content h4 {
     /*text-align:center;*/
     color: #666;
@@ -33,6 +36,8 @@
 .team img {
     height: 150px;
     width: 150px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 3px #444444;
     /*margin-top:80px;*/
 }
 
@@ -46,6 +51,7 @@
     margin-bottom: 20px;
     vertical-align: middle;
     line-height: 30px;
+    box-shadow: 1px 1px 1px #444444;
 }
 
 .team a:hover i {
@@ -62,7 +68,7 @@ font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     overflow-x: hidden;} 
-.marginbot-0 {
+/* .marginbot-0 {
     margin-bottom: 0 !important;
 }
 
@@ -219,7 +225,7 @@ font-size: 15px;
 
 .paddingbot-100 {
     padding-bottom: 100px !important;
-}
+} */
 .container-fluid {
     width: 100%;
     margin:0;
@@ -506,23 +512,21 @@ ul.lead-list {
 
 .details-text {
     /*border:1px solid red;*/
-    margin:0!important;
-    border-right: 2px solid #841b2d;
     box-sizing:border-box;
 }
 
 .details-text {
-    background-color: rgba(14, 4, 4, 0.70);
+padding-bottom: 20px;
+margin-bottom: 20px;
+    background-color: rgba(166, 277, 222, 0.10);
     border-right: 2px solid #A87F41;
-/*/    padding: 20px 20px 30px 30px;*/
-    overflow: auto;
-}
-.content-holder {
-    /*border: 1px solid red;*/
+    border-right: 12px solid #841b2d;
+    /*/    padding: 20px 20px 30px 30px;*/
+    /* overflow: auto; */
 }
 .content-holder h2 {
     color: #FFB03B;
-    font-size: 32px;
+    margin-top: 30px;
     padding-bottom: 15px;
     font-family: 'Satisfy', sans-serif;
 }
@@ -538,7 +542,10 @@ ul.lead-list {
     letter-spacing: 1px;
     font-weight: 300;
 }
-
+.details-text .btn.btn-read-more{
+    margin: auto;
+    
+}
 .btn-read-more {
     background: #FFB03B;
     padding: 7px 19px;
@@ -548,11 +555,14 @@ ul.lead-list {
     font-weight: 400;
     letter-spacing: 1px;
     border-radius: 3px;
-    color: #000;
+    color: #FFF;
     text-transform: uppercase;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    /* margin: 20px auto; */
 }
-
+.div-button{
+text-align: center;
+}
     .btn-read-more:hover {
         color: #000;
     }
@@ -570,14 +580,14 @@ ul.lead-list {
 }
 .header-h {
     color: #FFB03B;
-    font-size: 46px;
+    
     font-family: 'Satisfy', sans-serif;
     font-weight: 300;
 }
 
 .header-p {
     color: #9699a6;
-    font-size: 16px;
+    
 }
 .rounded1{
     border-radius:50%;
@@ -588,10 +598,7 @@ border:1px solid red;
     /*padding: 0 !important;*/
 }
 
-backgrouncheck {
-    /*position: relative;*/
-    /*padding:50px 0;*/
-}
+
 .backgroundspan  .before {
     position: absolute;
     height: 100%;
