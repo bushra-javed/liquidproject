@@ -974,7 +974,7 @@ text-align:justify;
 .team-footer
 .team-footer-banner{
     background-color:gray;
-padding: 30px;
+padding: 10px;
 }
 /* .team-footer-bg-color{
 
@@ -988,6 +988,12 @@ padding: 30px;
     /*-webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;*/
     /* }  */
+
+
+    .team-footer-detail1 ul li {
+
+        padding: 0 20px;
+    }    
     .team-footer-detail {
         /* color:#fff; */
         border: 1px solid green;
@@ -1021,7 +1027,7 @@ padding: 30px;
     padding: 10px 0;
     color:#444444 !important;   
     background-color: #fff;
-    font-weight: 700;
+    /* font-weight: 700; */
 } 
 
 .team-footer-detail-3{
