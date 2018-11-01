@@ -572,8 +572,8 @@ overflow: hidden;
 
 #sidenavContainer .small-screen-menu>li>a {
     color: #fff;
-    padding: 7px 15px !important;
-    font-weight: 500;
+    padding: 5px 15px !important;
+    /* font-weight: 500; */
     border-bottom: 1px solid gray;
 
 
@@ -583,14 +583,17 @@ overflow: hidden;
     background-color: #777;
     /* e77725; */
     transition: all .25s ease-in-out;
-}
 
+    /* color:green; */
+}
 /* sales@validential.com */
 #sidenavContainer .small-screen-menu>li>a:hover,
 #sidenavContainer .small-screen-menu>li>a:active {
-
-    color: #444444;
-    font-weight: 800;
+    
+    color: #fff;
+    font-size: 12px;
+    /* color:red; */
+    /* font-weight: 800; */
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -624,7 +627,7 @@ overflow: hidden;
 }
 
 #sidenavContainer ul li a{
-padding: 40px;
+    /* padding: 40px; */
 }
 
 #sidenavContainer ul li {
@@ -650,25 +653,38 @@ padding: 40px;
     display: block;
     padding: 5px 30px;
     text-transform: uppercase;
-    font-size: 16px;
-    color: #003274;
+    font-size: 12px !important;
+    /* border: 1px solid red; */
     position: relative;
     overflow: hidden;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 #sidenavContainer ul li ul.submenu li a {
     width: 80%;
     background-color: #fff;
     color: #777;
-    margin: 5px auto !important;
+    margin: 1px auto !important;
     padding-right: 20px !important;
+    /* border: 1px solid red; */
+    border: 1px solid #444444;
+    
+    font-size: 10px !important;
+    
+}
+#sidenavContainer ul li ul.submenu li a i {
+    margin-top: 2px;
+    /* border: 1px solid #444444; */
+    
 }
 
 #sidenavContainer ul li ul.submenu li a:hover,
 #sidenavContainer ul li ul.submenu li a:active {
-
-    font-weight: 500;
+    
+    /* font-weight: 500; */
+    /* color:#fff; */
+    border: 1px solid orange;
+    /* font-size: 12px !important; */
     transition: all .3s ease-in-out;
 }
 
