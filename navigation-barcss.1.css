@@ -304,7 +304,7 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     height: 80px;
     z-index: 9999;
     overflow: hidden;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     border-top: none;
     -webkit-transition: background-color .1s ease-in-out;
     -moz-transition: background-color .1s ease-in-out;
@@ -315,10 +315,10 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 .smallnavbar a {
     vertical-align: middle;
     text-align: center;
-    /*border:1px solid red;*/
+    /* border:1px solid red; */
     width: 22%;
     display: inline-block;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     transition: all .4s ease-in-out;
 
 
@@ -326,10 +326,14 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     -moz-transition: all .4s ease-in-out;
 }
 
-
+a.toggle-button{
+    margin-left: 0;
+}
 .toggle-button {
+    transition: all .4s ease-in-out;
+    
     padding: 0;
-    margin-left: 20px;
+    /* margin-left: 10px; */
     vertical-align: middle;
     /*-moz-transition: all .25s ease-in;
     -o-transition: all .25s ease-in;
@@ -340,12 +344,14 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 .toggle-button i {
     font-size: 20px !important;
     color: rgba(0, 0, 0, .5);
-    /*transition: all .4s ease;
+    /* display: fixed; */
+    /* margin-left: 50px; */
+    /* /*transition: all .4s ease; 
         -webkit-transition: all .4s ease;
         -moz-transition: all .4s ease;*/
 }
 
-.search-web m i:hover {
+.search-web i:hover {
 
     color: red !important;
 }
@@ -381,7 +387,7 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     background: 0 0;
     color: rgb(255, 255, 255);
     border: none;
-    /* border-bottom: 1px #fff solid; */
+    border-bottom: 1px #fff solid;
     font-size: 18px;
     line-height: 1.25;
     text-align: center;
@@ -398,6 +404,8 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 .sign-in i,
 .sign-in a,
 .toggle-button i {
+    display: inline;
+    position: relative;
     font-size: 1rem;
     /*font-weight: 700;*/
     line-height: 1.5;
@@ -405,6 +413,7 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     /*rgba;*/
     /*(0,0,0,.5) !important;*/
     vertical-align: middle;
+    /* border: 1px solid red; */
 }
 
 .close {
@@ -418,6 +427,39 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
     text-shadow: none;
 }
 
+
+.toggle-close{
+    position: absolute;
+    top: 20px !important;
+    left: 0;
+    /*color: #000 ;*/
+    color: #fff !important;
+    cursor: pointer;
+    opacity: 1;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 22px;
+    /* line-height:30px; */
+    padding: 18px;
+
+    display:none;
+    background-color: gray;
+    margin-top:-20px; 
+
+}
+
+.toggle-close-hide{
+    display: initial;
+    height: 100%;
+    width: 50px;
+    /* margin-top: -20px; */
+}
+.toggle-show{
+    left:-150px;
+    display: none;
+    border: 1px solid green;
+    
+}
 /* menu for samll screen  menubar detail*/
 
 /*.dropdown-menu {
@@ -496,6 +538,10 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 
 .hiddenclass{
 overflow: hidden;
+/* transition:all 19s ease-in-out; */
+    transition: all .25s ease-out;
+
+/* border: 3px solid red; */
 }
 
 #wrapper1 {
