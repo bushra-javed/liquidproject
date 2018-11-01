@@ -416,7 +416,7 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
         #sidenavContainer .small-screen-menu > li > a {
             color: #fff;
             padding:7px 5px !important;
-            font-weight: 900;
+            /* font-weight: 900; */
             border-bottom: 1px solid #fff;
             background-color: #fff;
             
