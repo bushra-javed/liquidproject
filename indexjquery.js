@@ -85,6 +85,7 @@ $(document).ready(function () {
         $('#sidenavContainer').toggleClass('active');
         // $("body").css('overflow', 'hidden'); // you can also use $(".yourClass").hide();
         $("body").toggleClass('hiddenclass'); // you can also use $(".yourClass").hide();
+        // $('#toggle-close').toggleClass('toggle-close-hide');
         
     });
 
@@ -100,6 +101,9 @@ $(document).ready(function () {
         // $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
         $('#sidenavContainer').toggleClass('active');
         $("body").toggleClass('hiddenclass'); // you can also use $(".yourClass").hide();
+        $('#toggle-close').toggleClass('toggle-close-hide');
+        $('#toggle-show').toggleClass('toggle-show');
+        
         
     });
 
