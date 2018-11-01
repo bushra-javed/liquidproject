@@ -86,6 +86,8 @@ $(document).ready(function () {
         // $("body").css('overflow', 'hidden'); // you can also use $(".yourClass").hide();
         $("body").toggleClass('hiddenclass'); // you can also use $(".yourClass").hide();
         // $('#toggle-close').toggleClass('toggle-close-hide');
+        $('#toggle-close').toggleClass('toggle-close-hide');
+        $('#toggle-show').toggleClass('toggle-show');
         
     });
 
