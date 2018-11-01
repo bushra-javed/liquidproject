@@ -673,11 +673,11 @@ padding: 40px;
 }
 
 #smallmenu-socialmedia a {
-    border: 2px solid #444444;
+    border: 2px solid #FFf;
     border-radius: 50%;
-    color: #777 !important;
+    color: #fff !important;
     font-size: 30px !important;
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 50px;
     height: 50px;
     text-align: center;
@@ -692,20 +692,26 @@ padding: 40px;
 }
 
 #sidenavContainer #smallmenu-socialmedia {
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     align-items: center;
     /* horizontal */
     justify-content: center;
     /* vertical */
     padding: 10px;
-
+    
 }
-
+  a.twitter-class{
+    background-color: #55acee !important;
+            
+        }
+a.facebook-class{
+    
+    background-color: #3b5998 !important;
+}
 #smallmenu-socialmedia a {
 
     margin-left: 10px;
-
 }
 
 
