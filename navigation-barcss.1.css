@@ -58,6 +58,7 @@ a:active {
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
     width: 100%;
     z-index: 999;
+    /* border: 1px solid red; */
     padding: 0 !important;
 }
 
@@ -83,13 +84,14 @@ a.logo-sm.bushra-brand
 .navbar-brand img{
     background-color: gray;
     padding: 2px;
-    box-shadow: 1px 1px 2px #FFF;
+    box-shadow: 2px 2px 3px #e77725;
     margin-left: 30px;
 }
 .logo-sm img{
     background-color: gray;
     padding: 2px;
-    box-shadow: 1px 1px 2px #FFF;
+    
+    box-shadow: 2px 2px 3px #e77725;
     margin-left: 10px;
     margin-top: -5px;
 }
@@ -279,17 +281,11 @@ navbar-light .navbar-nav nav-item .navlink a:hover {
 
 /* small screen navbar*/
 .mainnavbar-sm {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 4px #444444;
+    
+    -webkit-box-shadow: 1px 1px 4px #444444;
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
 }
-
-.logo-sm img {
-    /*width: 40px;
-    height: 40px;*/
-}
-
-.show {}
 
 .smallnavbar {
 
@@ -353,7 +349,7 @@ a.toggle-button{
 
 .search-web i:hover {
 
-    color: red !important;
+    color: #e77725 !important;
 }
 
 
@@ -436,7 +432,11 @@ a.toggle-button{
     color: #fff !important;
     cursor: pointer;
     opacity: 1;
+/* vvvv */
+    /* box-shadow: 2px 2px 5px  2px #FFF; */
     text-shadow: none;
+    box-shadow: 1px 1px 4px #444444;
+    
     font-weight: 700;
     font-size: 22px;
     /* line-height:30px; */
