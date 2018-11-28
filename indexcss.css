@@ -1,19 +1,17 @@
-﻿/* margins */
-
-
-/*team*/
-/*team*/
-
+﻿
 .team-header {
     padding-bottom: 30px;
     text-align: center;
 }
 
 .team-content{
-box-shadow: 0px 0px 3px #444444;
+box-shadow: 1px 1px 3px #444444;
+margin: 10px;
+padding-top: 10px;
+box-sizing: border-box;
 }
 .team-content h4 {
-    /*text-align:center;*/
+    /* text-align:center; */
     color: #666;
 }
 
@@ -30,6 +28,7 @@ box-shadow: 0px 0px 3px #444444;
 }
 
 .team p {
+    /* padding: 20px; */
     color: #737373;
 }
 
@@ -45,7 +44,7 @@ box-shadow: 0px 0px 3px #444444;
     height: 40px;
     width: 40px;
     padding: 5px;
-    font-size: 17px;
+    /* font-size: 17px; */
     border-radius: 50%;
     background-color: #a0db8e;
     margin-bottom: 20px;
@@ -61,182 +60,23 @@ box-shadow: 0px 0px 3px #444444;
 /*team*/
 
 body{
-font-size: 15px;
+/* font-size: 15px; */
     line-height: 1.52;
     color: #717f86;
-    font-size: 16px;
+    /* font-size: 16px; */
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    overflow-x: hidden;} 
-/* .marginbot-0 {
-    margin-bottom: 0 !important;
-}
+    /* font-weight: 400; */
+    overflow-x: hidden;
 
-.marginbot-10 {
-    margin-bottom: 10px !important;
-}
+} 
 
-.marginbot-20 {
-    margin-bottom: 20px !important;
-}
-
-.marginbot-30 {
-    margin-bottom: 30px !important;
-}
-
-.marginbot-40 {
-    margin-bottom: 40px !important;
-}
-
-.marginbot-50 {
-    margin-bottom: 50px !important;
-}
-
-.marginbot-60 {
-    margin-bottom: 60px !important;
-}
-
-.marginbot-70 {
-    margin-bottom: 70px !important;
-}
-
-.marginbot-80 {
-    margin-bottom: 80px !important;
-}
-
-.marginbot-90 {
-    margin-bottom: 90px !important;
-}
-
-.marginbot-100 {
-    margin-bottom: 100px !important;
-}
-
-.margintop-0 {
-    margin-top: 0 !important;
-}
-
-.margintop-10 {
-    margin-top: 10px !important;
-}
-
-.margintop-20 {
-    margin-top: 20px !important;
-}
-
-.margintop-30 {
-    margin-top: 30px !important;
-}
-
-.margintop-40 {
-    margin-top: 40px !important;
-}
-
-.margintop-45 {
-    margin-top: 45px !important;
-}
-
-.margintop-50 {
-    margin-top: 50px !important;
-}
-.paddingtop-0 {
-    padding-top: 0 !important;
-}
-
-.paddingtop-10 {
-    padding-top: 10px !important;
-}
-
-.paddingtop-20 {
-    padding-top: 20px !important;
-}
-
-.paddingtop-30 {
-    padding-top: 30px !important;
-}
-
-.paddingtop-40 {
-    padding-top: 40px !important;
-}
-
-.paddingtop-50 {
-    padding-top: 50px !important;
-}
-
-.paddingtop-60 {
-    padding-top: 60px !important;
-}
-
-.paddingtop-70 {
-    padding-top: 70px !important;
-}
-
-.paddingtop-80 {
-    padding-top: 80px !important;
-}
-
-.paddingtop-90 {
-    padding-top: 90px !important;
-}
-
-.paddingtop-100 {
-    padding-top: 100px !important;
-}
-
-.paddingbot-0 {
-    padding-bottom: 0 !important;
-}
-
-.paddingbot-10 {
-    padding-bottom: 10px !important;
-}
-
-.paddingbot-20 {
-    padding-bottom: 20px !important;
-}
-
-.paddingbot-30 {
-    padding-bottom: 30px !important;
-}
-
-.paddingbot-40 {
-    padding-bottom: 40px !important;
-}
-
-.paddingbot-50 {
-    padding-bottom: 50px !important;
-}
-
-.paddingbot-60 {
-    padding-bottom: 60px !important;
-}
-
-.paddingbot-70 {
-    padding-bottom: 70px !important;
-}
-
-.paddingbot-80 {
-    padding-bottom: 80px !important;
-}
-
-.paddingbot-90 {
-    padding-bottom: 90px !important;
-}
-
-.paddingbot-100 {
-    padding-bottom: 100px !important;
-} */
 .container-fluid {
     width: 100%;
     margin:0;
     padding:0; 
-    /*margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%*/;
 } 
-    .bg-light {
+
+.bg-light {
     background-color: #fff !important;
 }
    
@@ -270,34 +110,28 @@ font-size: 15px;
     transition:all .2s all;
 }
 
-    /*.intro-content.intro-nobg {
-        background: #fff;
-        position: relative;
-        margin: 0;
-        padding: 140px 0 60px;
-    }*/
-
 
 .slogan {
     margin-bottom: 20px;
 }
 
 .white-box {
-    background: rgba(255,255,255,.8);
+    /* background: rgba(255,255,255,.8); */
     padding: 20px;
     border-radius: 4px;
 }
 
-.intro-content h2 {
+.intro-content h4,
+    .intro-content h2 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .intro-div-transparent {
-    background-color: rgba(255,255,255,.8);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
+    background-color: rgba(220,220,220,.1);
+    box-shadow: 1px 1px 4px #444444;
     padding: 10px 10px;
+    color: #444444;
     border-radius: 5px;
 }
 
@@ -310,33 +144,37 @@ ul.lead-list {
 }
 
 
-    ul.lead-list li {
-        margin: 0 0 20px 0;
-        line-height: 1.6em;
-    }
+ul.lead-list li {
+    margin: 0 0 20px 0;
+    line-height: 1.6em;
+    list-style-position: inside;
+}
 
-        ul.lead-list li span.fa {
-            margin: 5px 5px 0 0;
-            float: left;
+ul.lead-list li span.fa {
+    display:block;
+    margin: 8px 5px 0 0;
+    float: left;
+}
+
+ul.lead-list li span.list {
+    /* border:1px solid red; */
+            display: inline;
+            margin: 0 0 14px;
         }
 
-        ul.lead-list li span.list {
-            display: inline-block;
-            margin: 0 0 0 10px;
-        }
 
-
-/*intor section -right side*/
-
-/*.intro-leftr-img*/ 
 
 .intro-left-img {
     width:100%;
-    margin-top:50px;
-    /*border:1px solid red;*/
+    height:100%;
+    /* margin-top:50px; */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items:center;
 }
 .intro-left-img img{
-    /*margin: 70px 70px !important;*/
+    margin:10px auto;
+    /* margin: 70px 70px !important; */
 }
     /* --- Pricing box --- */
     .pricing-box {
@@ -499,12 +337,13 @@ ul.lead-list {
     min-height: 630px;
 }
 .left-images img {
-    height: 308px;
+    height: 100%;
     width: 100%;
 }
 
 .left-images {
-    /*border: 1px solid red;*/
+    /* border: 1px solid red; */
+    height: 100%;
     padding: 0px !important;
     box-sizing: border-box;
     margin: 0 !important;
@@ -515,6 +354,9 @@ ul.lead-list {
     box-sizing:border-box;
 }
 
+.content-holder{
+    height: 100%;
+}
 .details-text {
 padding-bottom: 20px;
 margin-bottom: 20px;
