@@ -329,7 +329,7 @@ a {
     background-size:cover;*/
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: rgba(128,128,128,.5);
+    /* background-color: rgba(128,128,128,.5); */
 }
 
 .card-body {
