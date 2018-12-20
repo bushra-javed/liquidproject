@@ -300,10 +300,15 @@ ul.lead-list li span.list {
     }
 
 /* end of pricing*/
+#service{
+background-color: lightcyan;
+padding-top: 40px;
+}
 .icon i {
     color: #0cb8b6;
     font-size: 45px;
     margin-bottom: 25px;
+    
 }
 
 .service-info {
