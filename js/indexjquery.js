@@ -76,11 +76,8 @@ $(document).ready(function () {
 
 
 
-
     $('.slide-link').on('click', function () {
         $('li:has("ul")').children('ul').slideUp('fast');
-        // $('#wrapper1').toggle();
-        // $('#sidenavContainer').toggle();
         // $("#sidenavContainer").css('display', 'block'); // you can also use $(".yourClass").hide();
         $('#sidenavContainer').toggleClass('active');
         // $("body").css('overflow', 'hidden'); // you can also use $(".yourClass").hide();
@@ -91,12 +88,7 @@ $(document).ready(function () {
         
     });
 
-
-       
-
-    
-
-    $('.toggle-button').on('click', function () {
+   $('.toggle-button').on('click', function () {
         $('li:has("ul")').children('ul').slideUp('fast');
         // $('#wrapper1').toggle();
         // $('#sidenavContainer').toggle();
@@ -133,6 +125,39 @@ $(document).ready(function () {
     }
 
 
+    // hover on image
 
-    
+
+    $('.feature-four-left').hover(function () {
+        $('.img-left').css('transform','scale(1.15)');
+
+
+    }, function () {
+        $('.img-left').css('transform','scale(1)');
+        
+
+    });
+
+
+    $('.feature-four-right-1').hover(function () {
+        $('.img-right1').css('transform','scale(1.15)');
+
+
+    }, function () {
+        $('.img-right1').css('transform','scale(1)');
+        
+
+    });
+
+
+    $('.feature-four-right-2').hover(function () {
+        $('.img-right2').css('transform','scale(1.15)');
+
+
+    }, function () {
+        $('.img-right2').css('transform','scale(1)');
+        
+
+    });
+
 });

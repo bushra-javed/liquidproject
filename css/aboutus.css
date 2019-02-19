@@ -1,23 +1,4 @@
-﻿/* .margin-top-section{
-    margin-top:60px;
-} */
-body {
-    font-family: "Gotham SSm A", "Gotham SSm B";
-    font-style: normal;
-    font-size: 18px;
-    color: #45505f;
-    font-weight: 300;
-    line-height: 1.6;
-}
-
-* {
-    margin: 0;
-}
-/*approach-part-1*/
-
-  /*  approach-part2
-*/
-.approach-part2-detail {
+﻿.approach-part2-detail {
     padding-top: 60px;
     color: black;
     /*background-color: brown;*/
@@ -85,9 +66,6 @@ approach-part2-detail-1-text:last-child {
     padding: 20px 20px;
     transform: skew(-20deg);
 }
-.approach-part3-detail-2 p {
-
-}
 
 .approach-button1{
     display:inline-block;
@@ -117,11 +95,8 @@ approach-part2-detail-1-text:last-child {
     /*background-image:url(IMAGES/)*/
 }
 .approach-part4-detail-1 {
-    /*border:1px solid red;*/
     height: auto;
     border-radius: 5px;
-    /*display:flex;*/
-    /*align-items:center;*/
 }
     .approach-part4-detail-1 img {
         /*display: block;*/
