@@ -348,19 +348,23 @@ a {
 
 
 #service {
-    background-color: #6b7a8ff5;
+    background-color: rgba(220, 199, 170,.6);
+    /* //#6b7a8ff5; */
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #fff;
+    margin: 2rem auto;
 }
 
 #service h1 {
-    color: #fff;
+    color: #3f681c;
+    font-weight: 700;
+    padding-bottom: 1rem;
     text-transform: uppercase;
 }
 
 .icon i {
     background-color: #3f681c;
+    background-color:#f78821;
     
     height: 5rem;
     width: 5rem;
@@ -371,18 +375,22 @@ a {
     margin-bottom: 1rem;
     box-shadow: 1px 3px 3px #444;
     text-align: center;
-
+    
 }
 
 .service-info {
     margin-bottom: 2rem;
     text-align: center;
-
+    
+}
+.icon-info h4 {
+    color:#3f681c;
+    
 }
 
-#service .icon-info p,
-.icon-info h3 {
+#service .icon-info p{
     color: #fff;
+    color: #000;
     
 }
 
@@ -1390,7 +1398,7 @@ ul.lead-list li span.list {
 
 
 .team-footer .team-footer-banner {
-    background-color: #6b7a8f;
+    background-color: rgba(0,0,0,.8);
     padding: 10px;
 }
 
@@ -1441,7 +1449,7 @@ ul.lead-list li span.list {
 }
 h1.footer-heading{
     text-transform: uppercase;
-color:#fff !important;
+/* color:#fff !important; */
 font-size: 1.7rem;
 
 }
@@ -2189,19 +2197,19 @@ a.scrollup:focus {
 
 
 
+/* 
 
-
-.wrapper1 {
+.wrapper-title {
     height: 600px;
     box-sizing: border-box;
  overflow: hidden;
-}
-
+} */
+/* 
 .wrapper {
     overflow: hidden;
     height: 500px;
     box-sizing: border-box;
-}
+} */
 
 .title-side-left {
     position: relative;
