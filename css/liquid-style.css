@@ -1882,21 +1882,22 @@ color:#fff !important;
 }
 
 .sidebar-toptopage {
-    color: black;
+    color: #fff;
     border: 1px solid gray;
     display: block;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 50px;
     height: 50px;
-    font-size: 21px;
-    
+    line-height: 50px;    
     text-align: center;
     
-    padding: 10px 10px;
-    margin-bottom: 20px;
-    
-    background-color: lightgray;
+    background-color: #375e97;
     transition: all ease 300ms;
+}
+
+a.scrollup >i{
+color:#fff;
+    font-size: 20px !important;
 }
 
 .scrollup1 {
@@ -1905,15 +1906,16 @@ color:#fff !important;
 
 a.scrollup i:hover {
     text-decoration: none;
+    color:#f78821;
 }
-
+/* 
 a.scrollup:hover,
 a.scrollup:active,
 a.scrollup:focus {
     
     text-decoration: none;
-    color: red;
-}
+    color: orange;
+} */
 
 
 
