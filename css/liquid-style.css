@@ -86,7 +86,9 @@ a {
     color: #fff !important;
     background-color: orange !important;
 }
-
+.part-all-button:hover{
+    cursor: pointer;
+}
 
 
 .buttondiv1 {
