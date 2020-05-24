@@ -1,0 +1,177 @@
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 575px)  {
+ 
+    .soical-all {
+        color: #fff;
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        text-align: center;
+        left: 3px;
+        transition: all ease 300ms;
+    }
+
+
+
+    .team-footer-detail-3 .text-div {
+        top: 70px;
+        left: 80px;
+    }
+    #sidenavContainer {
+        display: initial;
+        
+    }
+     .navbar {
+        display: none;
+    }
+    
+    
+    .smallnavbar {
+        display: initial;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .team-footer-detail-3 .text-div {
+        top: 70px;
+        left: 80px;
+    }
+
+    #service .icon i {
+
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+    }
+
+    
+.title-side-right:after {
+    background-image: linear-gradient(0deg ,rgba(55, 93, 151, 0.774) 10%,rgba(0,0,0,.5) 30%, transparent 40% 100%);
+}
+
+
+.title-banner1 {
+    background-image: url('../IMAGES/img-full\ \(3\).jpg');
+
+}
+
+.title-banner3 {
+    background-image: url('../IMAGES/women-mobile.jpg');
+
+}
+
+.tilte-banner-part1-right {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+   
+}
+
+.simple-header {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    height: 60vh;
+    /* min-height: 150px; */
+}
+.simple-header.add-slash:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    top: 0;
+    z-index: 99;
+    background-image: linear-gradient(-106deg, rgba(0, 0, 0, 0.4), calc((1140px / 1.7) + ((100vw - 1180px)/ 2)), transparent 0);
+}
+
+
+.feature-text-right{
+    left:0;
+    top:60%;
+}
+            html{
+            
+                font-size: 14px !important;
+                
+            }
+
+    }
+
+    
+@media (min-width: 576px) and (max-width: 767px) {
+    html{
+        font-size: 16px !important;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    html{
+        font-size: 16px !important;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    html{
+        font-size: 18px !important;
+    }
+}
+@media (min-width: 1200px) {
+    html{
+        font-size: 19px !important;
+
+    }
+} 
+/*// Extra small devices (portrait phones, less than 576px) // No media query since this is the default in Bootstrap // Small devices (landscape phones, 576px and up) @media (min-width: 576px) {
+    ...
+}
+
+// Medium devices (tablets, 768px and up) @media (min-width: 768px) {
+    ...
+}
+
+// Large devices (desktops, 992px and up) @media (min-width: 992px) {
+    ...
+}
+
+// Extra large devices (large desktops, 1200px and up) @media (min-width: 1200px) {
+    ...
+}*/
+
+    
+
+@media (min-width: 576px) {
+
+#wrapper1{
+    display:none;
+}
+
+}
+@media (max-width: 905px) {
+    .navbar-expand-sm .navbar-nav .nav-link {
+    margin-right:0;
+    }
+        
+    .navbar-expand-sm .navbar-nav .nav-link {
+        font-size: 13px !important;
+
+        color:red;
+    }
+    .navbar-expand-sm .navbar-nav .dropdown-menu .dropdown-item {
+        font-size: 13px !important;
+    }
+ 
+}
+
+/*@media (min-width: 576px) _navbar.scss:157*/ 
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+
+
+
